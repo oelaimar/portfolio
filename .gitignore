@@ -1,6 +1,3 @@
-.DS_Store
-Thumbs.db
-
 # Logs
 logs
 *.log
@@ -10,52 +7,18 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Dependency directories
-node_modules/
+node_modules
+dist
+dist-ssr
+*.local
 
-# Build outputs
-dist/
-build/
-out/
-.next/
-.nuxt/
-.cache/
-.parcel-cache/
-.turbo/
-.eslintcache
-
-# Coverage
-coverage/
-*.lcov
-
-# Environment files (keep a .env.example instead)
-.env
-.env.*
-!.env.example
-!.env.sample
-
-# Local Netlify/Vercel
-.netlify/
-.vercel/
-
-# IDEs / Editors
-.idea/
-*.iml
-*.ipr
-*.iws
-
-.vscode/
+# Editor directories and files
+.vscode/*
 !.vscode/extensions.json
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-
-# TypeScript
-*.tsbuildinfo
-
-# Misc
-*.swp
-*.swo
-*.swn
-*.tmp
-
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
