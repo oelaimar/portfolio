@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { Sun, Moon, X, Menu } from "lucide-react"
+import { Sun, Moon, X, Menu } from "lucide-react";
 import { useState } from "react";
 
 const Navebar = ({ darkMode, toggleDarkMode }) => {
