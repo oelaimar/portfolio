@@ -72,16 +72,16 @@ const Hero = ({ darkMode }) => {
                         </p>
                         {/* buttons */}
                         <div className='w-full pt-4 sm:pt-6 '>
-                            <div className='flex flex-col sm-flex-row justify-center lg:justify-start gap-3 sm:gap-4'
+                            <div className='flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4'
                                 data-aos='fade-up'
                                 data-aos-delay='700'>
                                 <a href={CV} download className='w-full sm:w-auto'>
-                                    <button className='w-full sm:w-auto inline-flex items-center justify-center text-white bg-linear-to-r from-orange-500 to-amber-500 border-0 py-3 px-6 sm:px-8 hover:shadaw[0_0_400px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform'>
+                                    <button className='w-full sm:w-auto inline-flex items-center justify-center text-white bg-linear-to-r from-orange-500 to-amber-500 border-0 py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgba(255,165,0,0.35)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform'>
                                         <Download /> Download CV
                                     </button>
                                 </a>
                                 <a href="#contact" className="w-full sm:w-auto">
-                                    <button className={`w-full sm:w-auto inline-flex items-center ${theme.buttonSecoundary} justify-center border-0 py-3 px-6 sm:px-8 hover:shadaw[0_0_400px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform`}>
+                                    <button className={`w-full sm:w-auto inline-flex items-center ${theme.buttonSecoundary} justify-center border-0 py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgba(255,165,0,0.25)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform`}>
                                         <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                                         Contact Me
                                     </button>
@@ -89,7 +89,7 @@ const Hero = ({ darkMode }) => {
                             </div>
                         </div>
                     </div>
-                    {/* hero image - right column */}
+                    {/* hero image */}
                     <div
                         className='lg:w-1/2 w-full max-w-md lg:max-w-lg mt-8 lg:mt-0 flex justify-center'
                         data-aos='fade-left'
@@ -102,12 +102,12 @@ const Hero = ({ darkMode }) => {
                             <img
                                 src={hi}
                                 alt="Hi icon"
-                                className="absolute -top-3 sm:top-4 left-40 sm:left-40 w-30 h-30 sm:w-20 sm:h-16 md:w-20 md:h-20 object-contain animate-bounce opacity-90 z-10"
+                                className="absolute -top-3 sm:top-4 left-40 sm:left-40 w-20 h-20 sm:w-20 sm:h-16 md:w-20 md:h-20 object-contain animate-bounce opacity-90 z-10"
                             />
                         </div>
                     </div>
                 </div>
-                <div className={`absolute -top-20 -left-20 w-40 h-40 sm:w64 sm:h-64 ${theme.decorativeCircle} rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse delay-1000 hidden sm:block `}>
+                <div className={`absolute -top-20 -left-20 w-40 h-40 sm:w-64 sm:h-64 ${theme.decorativeCircle} rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse delay-1000 hidden sm:block `}>
 
                 </div>
             </section>

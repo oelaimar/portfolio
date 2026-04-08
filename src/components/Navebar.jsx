@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"
+import { motion as Motion } from "framer-motion"
 import { Sun, Moon, X, Menu } from "lucide-react";
 import { useState } from "react";
 
@@ -43,7 +43,7 @@ const Navebar = ({ darkMode, toggleDarkMode }) => {
 
     return (
         <div className="flex justify-center w-full fixed z-50 mt-4">
-            <motion.nav
+            <Motion.nav
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -51,7 +51,7 @@ const Navebar = ({ darkMode, toggleDarkMode }) => {
             >
                 <div className="flex items-center justify-center w-full space-x-6 lg:space-x-8">
                     {/* logo */}
-                    <motion.a
+                    <Motion.a
                         href="/"
                         whileHover={{ scale: 1.02 }}
                         className={"flex items-center space-x-2 "}
@@ -60,7 +60,7 @@ const Navebar = ({ darkMode, toggleDarkMode }) => {
                             portfolio <span
                                 className="text-orange-500">.</span>
                         </span>
-                    </motion.a>
+                    </Motion.a>
                     {/* navigation items */}
                     <div className="hidden lg:flex flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:gap-x-6">
                         {navItems.map((item) => (
@@ -70,7 +70,7 @@ const Navebar = ({ darkMode, toggleDarkMode }) => {
                                 onClick={() => handelNaveClick(item.name)}
                                 className="relative"
                             >
-                                <motion.span
+                                <Motion.span
                                     className={`font-medium transition-colors duration-300
                                 ${activeSection === item.name.toLowerCase()
                                             ? colors.textActive
@@ -80,21 +80,21 @@ const Navebar = ({ darkMode, toggleDarkMode }) => {
                                     whileTap={{ scale: 0.95 }}
                                 >
                                     {item.name}
-                                </motion.span>
+                                </Motion.span>
                                 {activeSection === item.name.toLowerCase() && (
-                                    <motion.div
+                                    <Motion.div
                                         layoutId="navebar-indicator"
                                         className={`absolute -bottom-1 left-0 right-0 h-0.5 bg-linear-to-r rounded-full ${colors.indicator}`}
                                     >
 
-                                    </motion.div>
+                                    </Motion.div>
                                 )}
                             </a>
                         ))}
                     </div>
                     <div className="flex items-center space-x-2">
                         {/* darkMode toggel */}
-                        <motion.button
+                        <Motion.button
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             onClick={toggleDarkMode}
@@ -105,20 +105,20 @@ const Navebar = ({ darkMode, toggleDarkMode }) => {
                                 (<Sun className="w-5 h-5 text-yellow-300" />)
                                 :
                                 (<Moon className="w-5 h-5 text-gray-700" />)}
-                        </motion.button>
+                        </Motion.button>
                         {/* Button */}
-                        <motion.a
+                        <Motion.a
                             href="#contact"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className={`hidden lg:block px-6 py-2 font-semibold rounded-full bg-linear-to-r ${colors.button} text-white shadow-md hover:shadow-lg transition-shadow`}
                         >
                             Hire me
-                        </motion.a>
+                        </Motion.a>
                     </div>
                     {/* mobile nave button */}
                     <div className="flex lg:hidden items-center space-x-4 px-2">
-                        <motion.button
+                        <Motion.button
                             whileTap={{ scale: 0.9 }}
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
                             className={`p-2 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}
@@ -131,11 +131,11 @@ const Navebar = ({ darkMode, toggleDarkMode }) => {
                                 )
                             }
 
-                        </motion.button>
+                        </Motion.button>
                     </div>
                 </div>
                 {isMenuOpen && (
-                <motion.div
+                <Motion.div
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
@@ -150,7 +150,7 @@ const Navebar = ({ darkMode, toggleDarkMode }) => {
                             href={item.link}
                             onClick={() => handelNaveClick(item.name)}
                             className="block">
-                                <motion.div
+                                <Motion.div
                                 whileHover={{ x: 5 }}
                                 className={`py-3 px-4 rounded-lg text-center 
                                     ${activeSection === item.name.toLowerCase()? 
@@ -166,21 +166,21 @@ const Navebar = ({ darkMode, toggleDarkMode }) => {
                                         >
                                             {item.name}
                                         </span>
-                                </motion.div>
+                                </Motion.div>
                             </a>
                         ))}
-                        <motion.a
+                        <Motion.a
                         href="#contact"
                         onClick={() => setIsMenuOpen(false) }
                         whileTap={{ scale: 0.95 }}
                         className={`block py-3 px-4 text-center font-semibold rounded-lg bg-linear-to-r ${colors.button} text-white shadow-md`}
                         >
                             Hire Me
-                        </motion.a>
+                        </Motion.a>
                     </div>
-                </motion.div>
+                </Motion.div>
                 )}
-            </motion.nav >
+            </Motion.nav >
         </div >
     );
 };
