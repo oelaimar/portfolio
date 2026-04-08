@@ -64,8 +64,8 @@ const Contact = ({ darkMode }) => {
                 </div>
                 <div>
                   <p className={`text-sm ${t.text}`}>Phone</p>
-                  <a className={`font-semibold ${t.heading}`} href="tel:+0000000000">
-                    +00 00 00 00 00
+                  <a className={`font-semibold ${t.heading}`} href="tel:+212655875028">
+                    +212 655 87 50 28
                   </a>
                 </div>
               </div>
