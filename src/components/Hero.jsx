@@ -9,10 +9,10 @@ import hi from '../assets/hi.png';
 
 const Hero = ({ darkMode }) => {
     const socialIcons = [
-        { icon: instagram, alt: 'instagram' },
-        { icon: github, alt: 'github' },
-        { icon: linkedin, alt: 'linkedin' },
-        { icon: Xtwiter, alt: 'X-twitter' },
+        { icon: instagram, alt: 'instagram', href: 'https://www.instagram.com/oussamaelaimar/' },
+        { icon: github, alt: 'github', href: 'https://github.com/oelaimar' },
+        { icon: linkedin, alt: 'linkedin', href: 'https://www.linkedin.com/in/ouelaimar' },
+        { icon: Xtwiter, alt: 'X-twitter', href: 'https://twitter.com/' },
     ];
 
     const darkTheme = {
@@ -44,7 +44,7 @@ const Hero = ({ darkMode }) => {
                             {socialIcons.map((social, index) => (
                                 <a
                                     key={index}
-                                    href='#'
+                                    href={social.href}
                                     target='_blank'
                                     rel='noreferrer'
                                     data-aos-delay={`${400 + index * 100}`}

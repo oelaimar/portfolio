@@ -17,28 +17,27 @@ const Projects = ({ darkMode }) => {
   };
   const t = darkMode ? dark : light;
 
-  // Replace links/titles with your real projects anytime.
   const projects = [
     {
-      title: "Project One",
-      description: "A responsive web app with modern UI and clean UX.",
-      tags: ["React", "Tailwind"],
-      liveUrl: "#",
-      repoUrl: "#",
+      title: "EasyColoc",
+      description: "A Laravel app for shared housing (colocation) management with Docker setup and documentation.",
+      tags: ["Laravel", "PHP", "Docker"],
+      liveUrl: "https://github.com/oelaimar/EasyColoc",
+      repoUrl: "https://github.com/oelaimar/EasyColoc",
     },
     {
-      title: "Project Two",
-      description: "A small full‑stack exercise with authentication and CRUD.",
-      tags: ["PHP", "PostgreSQL"],
-      liveUrl: "#",
-      repoUrl: "#",
+      title: "GreenTech-Solutions",
+      description: "A PHP/Laravel-style project with Docker environment and full source structure.",
+      tags: ["PHP", "Docker", "Blade"],
+      liveUrl: "https://github.com/oelaimar/GreenTech-Solutions",
+      repoUrl: "https://github.com/oelaimar/GreenTech-Solutions",
     },
     {
-      title: "Project Three",
-      description: "A UI component playground focusing on accessibility.",
-      tags: ["TypeScript", "React"],
-      liveUrl: "#",
-      repoUrl: "#",
+      title: "More projects on GitHub",
+      description: "See more repositories and ongoing work on my GitHub profile.",
+      tags: ["GitHub"],
+      liveUrl: "https://github.com/oelaimar",
+      repoUrl: "https://github.com/oelaimar",
     },
   ];
 
@@ -49,7 +48,7 @@ const Projects = ({ darkMode }) => {
           <h2 className={`text-3xl sm:text-4xl font-bold ${t.heading}`}>
             Featured <span className="text-orange-500">Projects</span>
           </h2>
-          <p className={`mt-4 ${t.text}`}>A few things I’ve built recently. (Swap placeholders with real links.)</p>
+          <p className={`mt-4 ${t.text}`}>A few things I’ve built recently.</p>
         </div>
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6">

@@ -25,7 +25,7 @@ const Contact = ({ darkMode }) => {
   const mailto = useMemo(() => {
     const subject = `Portfolio contact from ${name || "someone"}`;
     const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
-    return `mailto:you@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    return `mailto:oussama.el.aimar@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }, [name, email, message]);
 
   return (
@@ -52,8 +52,8 @@ const Contact = ({ darkMode }) => {
                 </div>
                 <div>
                   <p className={`text-sm ${t.text}`}>Email</p>
-                  <a className={`font-semibold ${t.heading}`} href="mailto:you@example.com">
-                    you@example.com
+                  <a className={`font-semibold ${t.heading}`} href="mailto:oussama.el.aimar@gmail.com">
+                    oussama.el.aimar@gmail.com
                   </a>
                 </div>
               </div>
@@ -122,9 +122,7 @@ const Contact = ({ darkMode }) => {
               >
                 Send <Send className="w-4 h-4" />
               </a>
-              <p className={`text-xs ${t.text}`}>
-                Tip: update the placeholder email/phone in `src/components/Contact.jsx`.
-              </p>
+              <p className={`text-xs ${t.text}`}>This will open your email app with the message pre-filled.</p>
             </div>
           </form>
         </div>
